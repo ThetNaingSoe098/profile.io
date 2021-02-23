@@ -148,7 +148,21 @@ button:hover{
 
     </style>
     </head>
-    <body>
+   
+ <body id="clk">
+   
+  <script>
+      
+   $('#clk').click(function(){
+        var audio = $('.song')[0];
+        try{
+        navigator.vibrate(20);}
+        catch(Exception){
+            console.log("Vibrate mode is not supported")
+        }
+        audio.play();        
+});
+  </script>
         <div class="wrapper">
             <div class="top"></div>
             <div class="profile">
@@ -193,5 +207,7 @@ function follow(){
         follow.value = "FOLLOW";
     }
 }</script>
+<audio class="song" autoplay loop>
+   <source src="https://www.8notes.com/school/mp32/piano/happy_birthday.mp3"></audio>
     </body>
 </html>
