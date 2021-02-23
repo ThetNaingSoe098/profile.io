@@ -1,0 +1,197 @@
+<!--
+
+Created by: Shruti Agrawal
+
+Date: 3 Feb 2019
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <style>
+        
+body {
+    margin: 0;
+    padding: 0;
+ background-image:url('https://images.8tracks.com/imgix/i/010/107/395/tumblr_nsvri6xqxx1ux1dn3o2_r1_500-305.gif?rect=0,0,500,500&q=65&fit=max&dpr=3');
+}
+.wrapper{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 10px 20px #000;
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 31%;
+    background: #ff5974;
+}
+.profile{
+    position: absolute;
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    top: 15%;
+    left: 0;
+    right: 0;
+    border-right:8px solid #ff5974;
+    border-bottom:8px solid #ff5974;
+    border-top:8px solid #fff;
+    border-left:8px solid #fff;
+    transform: rotateZ(45deg);
+    border-radius: 50%;
+    background: #faf;
+    z-index: 1;
+}
+.pic{
+    position: absolute;
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    transform: rotateZ(-45deg);
+    background: url("https://api.sololearn.com/Uploads/Avatars/8404727.jpg");
+    background-size: contain;
+    border-radius: 50%;    
+    color: transparent;
+}
+h1{
+    font-family: 'Noto Serif', serif;
+    font-size: 2.5em;
+}
+.pic:hover{
+    text-align: center;
+    color: #ef2968;
+    background: #fbf;
+}
+.botom{
+    position: relative;
+    width: 100%;
+    height: 69%;
+    background: #fff;
+}
+.info{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    text-align: center;
+    padding: 0;
+}
+h2,h3,h4{
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    padding: 0 0 10px 0;
+    margin: 0;
+    color: #ef2968;
+}
+h3{
+    font-size: 1em;
+}
+h4{
+    color: #fff;
+}
+.b1,.b2,.b3{
+    width: 33%;
+    height:60px;        
+    padding-top: 5px;
+    border-right: 1px solid #ef2968;
+    background: #ff5974;
+    float: left;    
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    text-align: center;
+}
+button{
+    position: relative;
+    padding: 8px;
+    width: 50%;
+    height: 46px;
+    background-color: #fff;
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    border-top: 5px solid #ff5974;
+    border-left: 5px solid #ff5974;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    color: #ff5974;
+    outline: none;
+    font-family: 'Noto Serif', serif;
+}
+button:hover{
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #ff5974;
+    border-right: 5px solid #ff5974;
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top"></div>
+            <div class="profile">
+                <div class="pic"><h1>Hsu</h1></div>
+            </div>
+            <div class="botom">
+            
+                <div class="info">
+                    <h2>HappyBirthday</h2>
+                    <h3>23rd year</h3>
+                    <div class="info-box">
+                        <div class="b1">
+                            <!--h4 class="fa fa-users"></h4>
+                            <h4>282</h4-->
+                        </div>
+                        <div class="b2">
+                            <!--h4 class="fa fa-edit"></h4>
+                            <h4>39</h4-->
+                        </div>
+                        <div class="b3">
+                            <!--h4 class="fa fa-code"></h4>
+                            <h4>22</h4-->
+                            <br clear="all">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="btn">
+                 <a href="https://www.facebook.com/sumyat.thwe.528"> <button id="f" onclick="follow()" value="FOLLOW">FOLLOW</button></a>
+                </div>
+            </div>
+        </div>
+        <script>
+function follow(){
+    var follow = document.getElementById('f');
+    if(follow.value == "FOLLOW"){
+        follow.innerHTML = "FOLLOWING";
+        follow.value = "FOLLOWING";
+    }
+    else{
+        follow.innerHTML = "FOLLOW";
+        follow.value = "FOLLOW";
+    }
+}</script>
+    </body>
+</html>
